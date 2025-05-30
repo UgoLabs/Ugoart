@@ -59,7 +59,7 @@ export const paintings = [
         year: 2024,
         imageUrl: "/paintings/Ikenga.JPG",
         description: "The Igbo symbol of strength and achievement",
-        medium: "Acrylic on canvas",
+        medium: "Oil on canvas",
         dimensions: "36 × 48 in"
     },
     {
@@ -149,7 +149,7 @@ export const paintings = [
         year: 2025,
         imageUrl: "/paintings/The-gilded- lady.JPG",
         description: "A portrait celebrating the golden essence of feminine strength and grace",
-        medium: "Acrylic on canvas",
+        medium: "Oil on canvas",
         dimensions: "24 × 36 in"
     }
 ];
