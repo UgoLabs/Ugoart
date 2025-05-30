@@ -1,0 +1,935 @@
+/* Enhanced Typography Imports */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;500;600;700&family=Inter:wght@200;300;400;500;600&family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&display=swap');
+
+/* Professional Artist Portfolio Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #2c2c2c;
+    background: #ffffff;
+    overflow-x: hidden;
+    text-rendering: optimizeLegibility;
+}
+
+.App {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Professional Header */
+.professional-header {
+    padding: 30px 40px;
+    border-bottom: 1px solid #eee;
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.artist-name {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #1a1a1a;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.artist-name::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #2c2c2c, #666);
+    transition: width 0.3s ease;
+}
+
+.artist-name:hover::after {
+    width: 100%;
+}
+
+/* Professional Navigation */
+.professional-nav {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link {
+    background: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #555;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    position: relative;
+    padding: 8px 16px;
+    border-radius: 4px;
+}
+
+.nav-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgba(44, 44, 44, 0.05);
+    transition: width 0.3s ease;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: #1a1a1a;
+    font-weight: 500;
+    transform: translateY(-1px);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+/* Main Content */
+.main-content {
+    flex: 1;
+    padding: 60px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+/* Professional Gallery */
+.professional-gallery {
+    width: 100%;
+}
+
+.artwork-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px 40px;
+    margin-top: 20px;
+}
+
+/* Artwork Items */
+.artwork-item {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.artwork-item:hover {
+    transform: translateY(-5px);
+}
+
+.artwork-image-container {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    background: #f9f9f9;
+}
+
+.artwork-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: opacity 0.3s ease;
+    
+    /* Enhanced image quality filters */
+    filter: brightness(1.05) contrast(1.1) saturate(1.1);
+}
+
+.artwork-image:hover {
+    filter: brightness(1.1) contrast(1.15) saturate(1.15);
+}
+
+.artwork-info {
+    padding: 0;
+}
+
+.artwork-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+    transition: all 0.3s ease;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.artwork-item:hover .artwork-title {
+    color: #000;
+    transform: translateY(-1px);
+}
+
+.artwork-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.artwork-year {
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #888;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.artwork-medium,
+.artwork-dimensions {
+    font-family: 'Crimson Text', serif;
+    font-size: 13px;
+    color: #999;
+    margin: 6px 0 0 0;
+    font-weight: 400;
+    font-style: italic;
+    letter-spacing: 0.3px;
+    line-height: 1.4;
+}
+
+/* Professional About Section */
+.professional-about {
+    width: 100%;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.about-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 32px;
+    color: #1a1a1a;
+    letter-spacing: 1.5px;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.about-text h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, #2c2c2c, #666);
+    margin-top: 16px;
+    border-radius: 2px;
+}
+
+.about-text p {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    line-height: 1.8;
+    margin-bottom: 32px;
+    color: #3a3a3a;
+    text-align: justify;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    text-indent: 1.5em;
+    position: relative;
+}
+
+.about-text p:first-of-type {
+    text-indent: 0;
+}
+
+.about-text .intro-paragraph {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 500;
+    color: #1a1a1a;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    border-left: 4px solid #2c2c2c;
+    padding-left: 28px;
+    font-style: normal;
+    text-indent: 0;
+    position: relative;
+    quotes: """ """ "'" "'";
+}
+
+.about-text .intro-paragraph::before {
+    content: open-quote;
+    font-size: 3em;
+    line-height: 0.1em;
+    margin-right: 0.1em;
+    vertical-align: -0.4em;
+    color: #ccc;
+    font-family: 'Playfair Display', serif;
+}
+
+.about-text .closing-paragraph {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    color: #2c2c2c;
+    font-style: italic;
+    border-top: 2px solid #f0f0f0;
+    padding-top: 28px;
+    margin-top: 36px;
+    text-indent: 0;
+    font-size: 20px;
+    line-height: 1.7;
+}
+
+.about-text em {
+    font-style: italic;
+    color: #1a1a1a;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #4a4a4a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contact-info {
+    margin-top: 48px;
+    padding-top: 32px;
+    border-top: 2px solid #f0f0f0;
+}
+
+.contact-info p {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 12px;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+
+.contact-info a {
+    color: #1a1a1a;
+    text-decoration: none;
+    border-bottom: 2px solid #e0e0e0;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    padding-bottom: 2px;
+}
+
+.contact-info a:hover {
+    border-color: #2c2c2c;
+    transform: translateY(-1px);
+    text-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.about-image {
+    position: sticky;
+    top: 120px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    filter: brightness(1.05) contrast(1.1) saturate(1.05);
+}
+
+/* Professional Footer */
+.professional-footer {
+    margin-top: auto;
+    padding: 40px;
+    border-top: 1px solid #eee;
+    background: #ffffff;
+}
+
+.professional-footer .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    color: #777;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.professional-footer .footer-content p {
+    font-weight: 400;
+    color: #888;
+}
+
+.footer-links {
+    display: flex;
+    gap: 36px;
+    align-items: center;
+}
+
+.footer-links span {
+    color: #999;
+    font-style: italic;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+}
+
+.footer-links a {
+    color: #666;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 6px 12px;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-links a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(44,44,44,0.08), transparent);
+    transition: left 0.6s ease;
+}
+
+.footer-links a:hover::before {
+    left: 100%;
+}
+
+.footer-links a:hover {
+    color: #1a1a1a;
+    background: rgba(44, 44, 44, 0.05);
+    transform: translateY(-2px);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Lightbox Styles */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+}
+
+.lightbox-content {
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+.lightbox-image {
+    max-width: 70vw;
+    max-height: 80vh;
+    object-fit: contain;
+    filter: brightness(1.05) contrast(1.1) saturate(1.1);
+}
+
+.lightbox-info {
+    max-width: 300px;
+    padding: 20px 0;
+}
+
+.lightbox-info h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1a1a1a;
+    letter-spacing: 1.2px;
+    line-height: 1.2;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 50%, #1a1a1a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.lightbox-info p {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: #666;
+    margin-bottom: 14px;
+    font-weight: 400;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+.lightbox-description {
+    margin-top: 28px;
+    padding-top: 28px;
+    border-top: 2px solid #f0f0f0;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #444;
+    font-style: italic;
+    letter-spacing: 0.2px;
+    position: relative;
+}
+
+.lightbox-description::before {
+    content: open-quote;
+    font-size: 2.5em;
+    line-height: 0.1em;
+    margin-right: 0.1em;
+    vertical-align: -0.3em;
+    color: #ddd;
+    font-family: 'Playfair Display', serif;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #666;
+    cursor: pointer;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+.lightbox-close:hover {
+    color: #333;
+}
+
+/* Enhanced Responsive Design */
+@media (max-width: 768px) {
+    .professional-header {
+        padding: 20px;
+    }
+    
+    .header-content {
+        flex-direction: column;
+        gap: 24px;
+        text-align: center;
+    }
+    
+    .artist-name {
+        font-size: 28px;
+        letter-spacing: 1.5px;
+    }
+    
+    .professional-nav {
+        gap: 24px;
+    }
+    
+    .nav-link {
+        font-size: 14px;
+        padding: 6px 12px;
+    }
+    
+    .main-content {
+        padding: 40px 20px;
+    }
+    
+    .artwork-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .artwork-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about-text h2 {
+        font-size: 28px;
+        text-align: center;
+    }
+    
+    .about-text p {
+        font-size: 16px;
+        line-height: 1.7;
+        text-align: left;
+    }
+    
+    .about-image {
+        order: -1;
+        position: static;
+    }
+    
+    .lightbox-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .lightbox-image {
+        max-width: 90vw;
+        max-height: 60vh;
+    }
+    
+    .lightbox-info {
+        max-width: 100%;
+        text-align: center;
+    }
+    
+    .lightbox-info h3 {
+        font-size: 24px;
+    }
+    
+    .professional-footer .footer-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .artist-name {
+        font-size: 24px;
+        letter-spacing: 1px;
+    }
+    
+    .professional-nav {
+        gap: 16px;
+    }
+    
+    .nav-link {
+        font-size: 13px;
+        padding: 5px 10px;
+    }
+    
+    .artwork-title {
+        font-size: 16px;
+    }
+    
+    .about-text h2 {
+        font-size: 24px;
+    }
+    
+    .about-text p {
+        font-size: 15px;
+    }
+    
+    .lightbox-close {
+        top: 20px;
+        right: 20px;
+    }
+    
+    .lightbox-info h3 {
+        font-size: 20px;
+    }
+    
+    .lightbox-description {
+        font-size: 14px;
+    }
+}
+
+/* App loading state with enhanced animations */
+.app-loaded {
+    opacity: 1;
+}
+
+.App {
+    opacity: 0;
+    animation: fadeInApp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInApp {
+    to {
+        opacity: 1;
+    }
+}
+
+/* Enhanced text selection */
+::selection {
+    background: rgba(44, 44, 44, 0.1);
+    color: #1a1a1a;
+}
+
+/* Text reveal animations */
+.artwork-title,
+.about-text h2,
+.artist-name {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: revealText 0.8s ease-out forwards;
+}
+
+.about-text p {
+    opacity: 0;
+    transform: translateY(15px);
+    animation: revealText 0.6s ease-out forwards;
+}
+
+.about-text p:nth-child(2) { animation-delay: 0.1s; }
+.about-text p:nth-child(3) { animation-delay: 0.2s; }
+.about-text p:nth-child(4) { animation-delay: 0.3s; }
+.about-text p:nth-child(5) { animation-delay: 0.4s; }
+.about-text p:nth-child(6) { animation-delay: 0.5s; }
+
+.artwork-title {
+    animation-delay: 0.1s;
+}
+
+.about-text h2 {
+    animation-delay: 0s;
+}
+
+.artist-name {
+    animation-delay: 0s;
+}
+
+@keyframes revealText {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Typewriter effect for special text elements */
+.artist-name {
+    overflow: hidden;
+    border-right: 2px solid transparent;
+    white-space: nowrap;
+    animation: 
+        revealText 0.8s ease-out forwards,
+        typewriter 2s steps(3) 0.8s forwards,
+        blink 1s infinite 2.8s;
+}
+
+@keyframes typewriter {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    0%, 50% { border-color: transparent; }
+    51%, 100% { border-color: #2c2c2c; }
+}
+
+/* Smooth text hover effects */
+.artwork-title,
+.artist-name,
+.about-text h2 {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2c2c2c 50%, #1a1a1a 100%);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    transition: all 0.4s ease;
+    position: relative;
+}
+
+.artwork-item:hover .artwork-title,
+.artist-name:hover,
+.about-text h2:hover {
+    background-position: 100% 100%;
+    transform: translateY(-2px);
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+}
+
+/* Premium text selection styling */
+::selection {
+    background: rgba(44, 44, 44, 0.15);
+    color: #1a1a1a;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: rgba(44, 44, 44, 0.15);
+    color: #1a1a1a;
+    text-shadow: none;
+}
+
+/* Elegant paragraph drop caps */
+.about-text p:not(.intro-paragraph):not(.closing-paragraph):first-letter {
+    float: left;
+    font-family: 'Playfair Display', serif;
+    font-size: 4em;
+    line-height: 0.8;
+    margin: 0.1em 0.1em 0 0;
+    color: #2c2c2c;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Refined text animations with stagger */
+.about-text p {
+    opacity: 0;
+    transform: translateY(20px) translateX(-10px);
+    animation: staggeredReveal 0.8s ease-out forwards;
+}
+
+.about-text p:nth-child(3) { animation-delay: 0.1s; }
+.about-text p:nth-child(4) { animation-delay: 0.2s; }
+.about-text p:nth-child(5) { animation-delay: 0.3s; }
+.about-text p:nth-child(6) { animation-delay: 0.4s; }
+.about-text p:nth-child(7) { animation-delay: 0.5s; }
+
+@keyframes staggeredReveal {
+    to {
+        opacity: 1;
+        transform: translateY(0) translateX(0);
+    }
+}
+
+/* Interactive text focus states */
+.about-text p:hover {
+    color: #1a1a1a;
+    transition: color 0.3s ease;
+}
+
+.contact-info a {
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-info a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(44,44,44,0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.contact-info a:hover::before {
+    left: 100%;
+}
+
+/* Premium text effects and micro-interactions */
+.artist-name {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.artist-name:hover {
+    transform: translateZ(10px) rotateX(5deg);
+}
+
+.artwork-title {
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    transform-origin: left center;
+}
+
+.artwork-item:hover .artwork-title {
+    transform: translateY(-3px) scale(1.02);
+    filter: drop-shadow(0 6px 12px rgba(0,0,0,0.15));
+}
+
+/* Elegant text reveal on scroll */
+@keyframes textFadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px) rotateX(10deg);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0) rotateX(0deg);
+    }
+}
+
+.about-text h2,
+.lightbox-info h3 {
+    animation: textFadeInUp 1s ease-out;
+}
+
+/* Sophisticated link hover effects */
+.contact-info a,
+.footer-links a {
+    background: linear-gradient(135deg, currentColor, currentColor);
+    background-size: 0% 2px;
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.contact-info a:hover,
+.footer-links a:hover {
+    background-size: 100% 2px;
+}
+
+/* Premium typography baseline grid */
+body {
+    line-height: 1.618; /* Golden ratio */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.2;
+    margin-bottom: 0.618em;
+}
+
+p {
+    margin-bottom: 1.618em;
+}
+
+/* Elegant text shadows for depth */
+.artist-name,
+.artwork-title,
+.about-text h2,
+.lightbox-info h3 {
+    text-shadow: 
+        0 1px 2px rgba(0,0,0,0.1),
+        0 2px 4px rgba(0,0,0,0.05),
+        0 4px 8px rgba(0,0,0,0.02);
+}
+
+/* Focus states for accessibility */
+.nav-link:focus,
+.artwork-item:focus {
+    outline: 2px solid #333;
+    outline-offset: 2px;
+}
+
+.lightbox-close:focus {
+    outline: 2px solid #333;
+    outline-offset: 2px;
+}
