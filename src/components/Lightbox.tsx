@@ -55,7 +55,6 @@ const Lightbox: React.FC<LightboxProps> = ({ painting, onClose }) => {
                     <h3>{painting.title}</h3>
                     <p>{painting.year}</p>
                     {painting.medium && <p>{painting.medium}</p>}
-                    {painting.dimensions && <p>{painting.dimensions}</p>}
                     {painting.description && (
                         <p className="lightbox-description">{painting.description}</p>
                     )}

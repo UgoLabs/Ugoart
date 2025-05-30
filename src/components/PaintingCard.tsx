@@ -44,7 +44,6 @@ const PaintingCard: React.FC<PaintingCardProps> = ({ title, artist, year, imageU
                     <span className="artwork-year">{year}</span>
                 </div>
                 {medium && <p className="artwork-medium">{medium}</p>}
-                {dimensions && <p className="artwork-dimensions">{dimensions}</p>}
             </div>
         </div>
     );
