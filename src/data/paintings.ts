@@ -18,6 +18,15 @@ export const paintings = [
         dimensions: "30 × 40 in"
     },
     {
+        title: "Eko Market Day",
+        artist: "Ugo",
+        year: 2025,
+        imageUrl: "/paintings/Eko Market Day.JPG",
+        description: "The vibrant energy and commerce of Lagos markets",
+        medium: "Acrylic on canvas",
+        dimensions: "30 × 40 in"
+    },
+    {
         title: "Freedom",
         artist: "Ugo",
         year: 2024,
@@ -52,6 +61,15 @@ export const paintings = [
         description: "The strength and struggle of urban Black masculinity",
         medium: "Acrylic on canvas",
         dimensions: "30 × 40 in"
+    },
+    {
+        title: "Hysteria",
+        artist: "Ugo",
+        year: 2025,
+        imageUrl: "/paintings/Hysteria.jpg",
+        description: "An exploration of emotional intensity and human psychology",
+        medium: "Acrylic on canvas",
+        dimensions: "24 × 36 in"
     },
     {
         title: "Ikenga",
