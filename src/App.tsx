@@ -19,7 +19,7 @@ const App: React.FC = () => {
         <div className={`App ${isLoaded ? 'app-loaded' : ''}`}>
             <header className="professional-header">
                 <div className="header-content">
-                    <h1 className="artist-name">Ugo</h1>
+                    <h1 className="artist-name">Ugo ART</h1>
                     <Navigation 
                         currentSection={currentSection} 
                         onSectionChange={setCurrentSection} 
