@@ -1,7 +1,7 @@
 {
   "name": "ugoart",
   "version": "1.0.0",
-  "description": "A website showcasing 20 paintings.",
+  "description": "A website showcasing 24 paintings.",
   "main": "src/App.tsx",
   "scripts": {
     "start": "react-scripts start",

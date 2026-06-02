@@ -1,5 +1,95 @@
 export const paintings = [
     {
+        title: "Black Sheep",
+        artist: "Ugo",
+        year: 2025,
+        imageUrl: "/paintings/black-sheep.jpg",
+        description: "Standing apart with defiant individuality in a conforming world",
+        medium: "Acrylic on canvas",
+        dimensions: "24 × 36 in"
+    },
+    {
+        title: "Funny Times",
+        artist: "Ugo",
+        year: 2025,
+        imageUrl: "/paintings/funny_times.jpg",
+        description: "Joy and humor as resistance in everyday Black life",
+        medium: "Acrylic on canvas",
+        dimensions: "24 × 36 in"
+    },
+    {
+        title: "Spring Break",
+        artist: "Ugo",
+        year: 2024,
+        imageUrl: "/paintings/Spring-Break.JPG",
+        description: "Youth, freedom, and the promise of renewal",
+        medium: "Acrylic on canvas",
+        dimensions: "30 × 40 in"
+    },
+    {
+        title: "Nwanyi",
+        artist: "Ugo",
+        year: 2025,
+        imageUrl: "/paintings/nwanyi.jpg",
+        description: "Honoring the strength, beauty, and spirit of womanhood in Igbo culture",
+        medium: "Acrylic on canvas",
+        dimensions: "24 × 36 in"
+    },
+    {
+        title: "Nwoke",
+        artist: "Ugo",
+        year: 2025,
+        imageUrl: "/paintings/nwoke.jpg",
+        description: "A portrait of masculinity, identity, and Igbo heritage",
+        medium: "Acrylic on canvas",
+        dimensions: "24 × 36 in"
+    },
+    {
+        title: "Smoke Break",
+        artist: "Ugo",
+        year: 2025,
+        imageUrl: "/paintings/smoke-break.jpg",
+        description: "A quiet moment of pause amid the pressures of modern life",
+        medium: "Acrylic on canvas",
+        dimensions: "24 × 36 in"
+    },
+    {
+        title: "God Help Us",
+        artist: "Ugo",
+        year: 2024,
+        imageUrl: "/paintings/god help us.jpg",
+        description: "A prayer for hope in challenging times",
+        medium: "Acrylic on canvas",
+        dimensions: "24 × 32 in"
+    },
+    {
+        title: "The Gilded Lady",
+        artist: "Ugo",
+        year: 2025,
+        imageUrl: "/paintings/the-gilded-lady.jpg",
+        description: "A portrait celebrating the golden essence of feminine strength and grace",
+        medium: "Oil on canvas",
+        dimensions: "24 × 36 in"
+    },
+    {
+        title: "Villager",
+        artist: "Ugo",
+        year: 2025,
+        imageUrl: "/paintings/villager.jpg",
+        description: "Life and resilience rooted in community and ancestral land",
+        medium: "Acrylic on canvas",
+        dimensions: "24 × 36 in"
+    },
+    {
+        title: "Mama's Boy",
+        artist: "Ugo",
+        year: 2025,
+        imageUrl: "/paintings/mama's-boy.jpg",
+        description: "The enduring bond between mother and son across generations",
+        medium: "Acrylic on canvas",
+        dimensions: "24 × 36 in"
+    },
+    {
         title: "Chioma My Love",
         artist: "Ugo",
         year: 2024,
@@ -45,15 +135,6 @@ export const paintings = [
         dimensions: "20 × 30 in"
     },
     {
-        title: "God Help Us",
-        artist: "Ugo",
-        year: 2024,
-        imageUrl: "/paintings/God-Help-Us.JPG",
-        description: "A prayer for hope in challenging times",
-        medium: "Acrylic on canvas",
-        dimensions: "24 × 32 in"
-    },
-    {
         title: "Hood Man",
         artist: "Ugo",
         year: 2024,
@@ -81,28 +162,10 @@ export const paintings = [
         dimensions: "36 × 48 in"
     },
     {
-        title: "Reflections in Time",
-        artist: "Ugo",
-        year: 2024,
-        imageUrl: "/paintings/IMG_0920.JPG",
-        description: "Contemplating past, present, and future",
-        medium: "Acrylic on canvas",
-        dimensions: "24 × 36 in"
-    },
-    {
-        title: "Urban Awakening",
-        artist: "Ugo",
-        year: 2024,
-        imageUrl: "/paintings/IMG_0967.JPG",
-        description: "The consciousness rising in contemporary Black life",
-        medium: "Acrylic on canvas",
-        dimensions: "30 × 40 in"
-    },
-    {
         title: "King in Me",
         artist: "Ugo",
         year: 2024,
-        imageUrl: "/paintings/King-in-me.jpg",
+        imageUrl: "/paintings/king in me.JPG",
         description: "Recognizing the royalty within",
         medium: "Acrylic on canvas",
         dimensions: "24 × 36 in"
@@ -151,23 +214,5 @@ export const paintings = [
         description: "The artist examining himself",
         medium: "Acrylic on canvas",
         dimensions: "36 × 48 in"
-    },
-    {
-        title: "Spring Break",
-        artist: "Ugo",
-        year: 2024,
-        imageUrl: "/paintings/Spring-Break.JPG",
-        description: "Youth, freedom, and the promise of renewal",
-        medium: "Acrylic on canvas",
-        dimensions: "30 × 40 in"
-    },
-    {
-        title: "The Gilded Lady",
-        artist: "Ugo",
-        year: 2025,
-        imageUrl: "/paintings/The-gilded- lady.JPG",
-        description: "A portrait celebrating the golden essence of feminine strength and grace",
-        medium: "Oil on canvas",
-        dimensions: "24 × 36 in"
     }
 ];

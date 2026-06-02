@@ -1,4 +1,5 @@
 import React from 'react';
+import { paintings } from '../data/paintings';
 
 const Footer: React.FC = () => {
     return (
@@ -10,7 +11,7 @@ const Footer: React.FC = () => {
                 </div>
                 <div className="footer-section">
                     <h4>Collection</h4>
-                    <p>Featuring {10} original paintings</p>
+                    <p>Featuring {paintings.length} original paintings</p>
                     <p>Created in 2025</p>
                 </div>
                 <div className="footer-section">
