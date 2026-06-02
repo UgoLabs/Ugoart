@@ -38,12 +38,13 @@ const Lightbox: React.FC<LightboxProps> = ({ painting, onClose }) => {
 
     return (
         <div className="lightbox-overlay" onClick={handleBackdropClick}>
-            <button 
-                className="lightbox-close" 
+            <button
+                type="button"
+                className="lightbox-back"
                 onClick={onClose}
-                aria-label="Close lightbox"
+                aria-label="Back to gallery"
             >
-                ×
+                ← Back to Gallery
             </button>
             <div className="lightbox-content">
                 <img 
